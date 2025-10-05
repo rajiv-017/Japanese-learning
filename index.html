@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Learning App</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <h1>学 Japanese Learning App</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Kana List</a>
+    <a href="#">Flashcards</a>
+  </nav>
+</header>
+
+<main class="cards-section">
+  <div class="card">
+    <div class="icon">あ</div>
+    <h2>Hiragana & Katakana</h2>
+    <button id="kanaBtn">View Kana Lists</button>
+  </div>
+
+  <div class="card">
+    <div class="icon">🃏</div>
+    <h2>Verb Flashcard</h2>
+    <button>Start Flashcard</button>
+  </div>
+
+  <div class="card">
+    <div class="icon">?</div>
+    <h2>Quiz/Practice</h2>
+    <button>Coming soon</button>
+  </div>
+</main>
+
+<!-- Flashcard Modal -->
+<div class="modal" id="flashcardModal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Verb Flashcard</h2>
+    <div class="flashcard">
+      <p id="jpWord">食べる (taberu)</p>
+      <p id="enWord">to eat</p>
+    </div>
+    <button id="nextBtn">Next</button>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="#">Privacy</a>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
